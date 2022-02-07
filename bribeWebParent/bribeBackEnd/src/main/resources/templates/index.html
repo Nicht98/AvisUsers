@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+
+<head th:replace="fragments :: page_head('Home - BribeMap Admin')" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<link rel="stylesheet" th:href="@{/css/me.css}">
+<link rel="stylesheet"  th:href="@{/lib/editormd/css/editormd.min.css}">
+
+<body>
+<div class="container-fluid">
+<div th:replace="navigation :: menu "> </div>
+	<div> 
+	
+	<div  class="ui success large message">
+	
+	<h1> Bribe Control Panel </h1> 
+		Welcome   
+		<a  th:href="@{/account}"
+        sec:authentication="principal.fullname"></a> 
+     <span  sec:authentication="principal.authorities"></span>
+	
+	 </div>
+		
+        
+           
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+	</div>	
+	
+	
+   <footer  class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <!--divide 16 col-->
+            <div class="ui inverted divided stackable grid">
+                <div class="four wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img  th:src="@{/images/show.jpg}" class="ui rounded image" alt="" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="eight wide column">
+                    <h4 class="ui inverted header m-text-spaced">about me</h4>
+                    <div class="ui inverted link list">
+                        <p class="m-text-thin m-text-spaced m-opacity-mini m-text-lined" >This is my personal blog, I will share my favorite articles, music, films, technological blog ...</p>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced m-text-lined">Contact Me</h4>
+                    <div class="ui inverted link list m-text-thin m-text-spaced m-text-lined">
+                        <a href="#" class="item">QQ：648398197</a>
+                        <a href="#" class="item">Email：648398197@qq.com</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-mini m-text-lined">Copyright © 2022 Designed by QIC</p>
+        </div>
+
+
+    </footer>
+</div>
+
+
+</body>
+
+</html>
